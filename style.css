@@ -153,8 +153,7 @@ nav ul li a:hover::after {
   /* Placeholder gambar briket/bara menyala */
   background:
     linear-gradient(rgba(46, 90, 39, 0.7), rgba(44, 44, 44, 0.9)),
-    url("/assets/hero_background.jpg")
-      center/cover;
+    url("/assets/hero_background.jpg") center/cover;
   color: var(--white);
   /* margin-top: 60px; */
 }
@@ -279,7 +278,7 @@ nav ul li a:hover::after {
   height: 5px;
   background-color: var(--color-accent);
 }
-.product-card img {
+.product-card .product-card-img {
   z-index: 0;
   height: 160%;
   object-fit: cover;
@@ -340,6 +339,19 @@ nav ul li a:hover::after {
   gap: 10px;
   flex-wrap: wrap;
 }
+.ecommerce-links .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ecommerce-links img {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+.ecommerce-links a i {
+  margin-right: 8px;
+}
 
 .custom-order {
   margin-top: 50px;
@@ -399,6 +411,9 @@ footer {
   gap: 30px;
   margin-bottom: 3rem;
 }
+/* .footer-box div {
+  border: 1px solid white;
+} */
 .footer-box h3 {
   color: var(--color-bg-sec);
   margin-bottom: 20px;
@@ -431,6 +446,11 @@ footer {
   font-size: 1.2rem;
   transition: 0.4s;
 }
+.social-icons a svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .social-icons a:hover {
   background-color: var(--color-accent);
   transform: rotate(360deg);
